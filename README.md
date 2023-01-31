@@ -1,1 +1,1 @@
-# Thriva
+# Thryva
