@@ -1,0 +1,154 @@
+:root {
+    --main-color: #edf398;
+}
+
+body {
+    background-color: black;
+    margin: 0px;
+    font-family: "Unbounded", cursive;
+    /* overflow: hidden; */
+}
+
+.background {
+    background-image: url(../images/defaultImage.jpg);
+    background-repeat: no-repeat;
+    /* width: 100vw;
+    height: 100vh; */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    background-color: var(--main-color);
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: red; */
+    margin: 0px;
+}
+
+.card {
+    background-color: antiquewhite;
+    margin: 10px 0px;
+}
+
+.starter {
+    content: "";
+    height: 100vh;
+}
+
+.progress-bar-empty {
+    height: 20px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightslategray;
+    box-shadow: inset 0 -5px 5px rgba(255,255,255, 0.3);
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%,
+    rgb(84,240,84) 69%
+  );
+    width: 200px;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+    -45deg, 
+    rgba(255, 255, 255, .2) 25%, 
+    transparent 25%, 
+    transparent 50%, 
+    rgba(181, 181, 181, .3) 50%, 
+    rgba(181, 181, 181, .3) 75%, 
+    transparent 75%, 
+    transparent
+  );
+  z-index: 1;
+  background-size: 50px 50px;
+  animation: move 2s linear infinite;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+/* arrows by https://codepen.io/postor */
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+}
+
+.arrows path {
+	stroke: var(--main-color);
+	fill: transparent;
+	stroke-width: 3px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s;
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s;
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s;
+}
