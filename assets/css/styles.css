@@ -136,12 +136,6 @@ h1 {
   overflow: hidden;
 }
 
-
-
-
-
-
-
 /* arrows by https://codepen.io/postor */
 .arrows {
 	width: 60px;
@@ -190,3 +184,70 @@ h1 {
 	animation-delay:0s;
 	-webkit-animation-delay:0s;
 }
+
+.divider {
+    display: none;
+}
+
+.task {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .speech-bubble {
+        width: 50vw;
+        top: 35vh;
+        left: 25vw;
+    }
+
+    .card {
+        max-width: 75vw;
+    }
+ }
+
+ @media screen and (min-width: 1024px) {
+    .card {
+        display: none;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    .divider {
+        position: relative;
+        display: block;
+    }
+
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .wave svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 165px;
+    }
+    
+    .wave .shape-fill {
+        fill: var(--main-color);
+    }
+
+    .task {
+        display: block;
+        background-color: var(--main-color);
+        height: 50vh;
+    }
+
+    #add-button {
+        left: 50px;
+    }
+
+ }
