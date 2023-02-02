@@ -219,6 +219,8 @@ h1 {
         display: block;
     }
 
+    /* wave design from https://www.shapedivider.app */
+
     .wave {
         position: absolute;
         bottom: 0;
