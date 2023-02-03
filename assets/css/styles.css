@@ -36,6 +36,7 @@ h1 {
     border-radius: 50%;
     display: none;
     position: absolute;
+    box-shadow: 5px 5px rgba(0,0,0,0.2);
 }
 
 #bubble-one {
@@ -245,11 +246,19 @@ h1 {
     .task {
         display: block;
         background-color: var(--main-color);
-        height: 50vh;
+        max-height: 50vh;
     }
 
     #add-button {
         left: 50px;
+    }
+
+    .saved-task-section {
+        display: none;
+    }
+
+    .progress-bar-section {
+        display: none;
     }
 
  }
