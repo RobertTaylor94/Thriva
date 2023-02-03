@@ -47,20 +47,21 @@
               <button class="btn btn-success d-none">Complete</button>
               <form>
                 <div class="input-group mb-3">
-                  <input type="text" id="task" placeholder="Today I will..." class="form-control">
+                  <input type="text" id="task" placeholder="Today I will..." class="form-control task-input">
                 </div>
-                <button class="btn btn-outline-secondary" type="button" id="add-button">Add
+                <button class="btn btn-outline-secondary add-button" type="button">Add
                   Task</button>
               </form>
               <hr>
               <div class="text-center">
                 <div class="progress-bar-empty"><span class="progress-bar"></span></div>
-                <div id="countdown">3 hours left to finish your task.</div>
+                <div class="countdown-text">3 hours left to finish your task.</div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <section class="divider">
         <div class="wave">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -76,17 +77,35 @@
             <h2>Critical Task</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-6">
+
+        <div class="row justify-content-center add-task-form">
+          <div class="col-6 task-form m-3">
             <form>
               <div class="input-group mb-3">
-                <input type="text" id="task" placeholder="Today I will..." class="form-control">
+                <input type="text" id="task" placeholder="Today I will..." class="form-control task-input">
               </div>
-              <button class="btn btn-outline-secondary" type="button" id="add-button">Add
+              <button class="btn btn-outline-secondary add-button" type="button">Add
                 Task</button>
             </form>
           </div>
         </div>
+
+        <div class="row justify-content-center saved-task-section">
+          <div class="col-6 m-3 text-center">
+            <h4>Today I will...</h4>
+            <p class="daily-task"></p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center progress-bar-section">
+          <div class="col-6 m-3">
+            <div class="text-center">
+              <div class="progress-bar-empty"><span class="progress-bar"></span></div>
+              <div class="countdown-text">3 hours left to finish your task.</div>
+            </div>
+          </div>
+        </div>
+        
       </section>
       
     </div>
