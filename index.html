@@ -17,8 +17,27 @@
   <header class="header">
     <h1>Thryva</h1>
   </header>
-
+  <!-- Quote Bubble Begin -->
   <div class="row justify-content-center g-0">
+    <div class="col-12 background justify-content-center" id="background-image">
+      <div class="starter">
+        <div id="quote-container">
+          <div id="vertically-centered-box">
+            <div id="speech-bubble">
+              <p id="quote" class="text-center"><i class="fa fa-spinner" aria-hidden="true"></i> Loading ...</p>
+              <p id="author"><i class="fa fa-spinner" aria-hidden="true"></i> Loading ...</p>
+              <p>
+              <footer class="text-center">
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Quote Bubble End -->
+
+  <!-- <div class="row justify-content-center g-0">
     <div class="col-12 background justify-content-center" id="background-image">
       <div class="starter">
         <div id="quote-container">
@@ -31,91 +50,92 @@
           </div>
         </div>
       </div>
-      <div><svg class="arrows">
-          <path class="a1" d="M0 0 L30 32 L60 0"></path>
-          <path class="a2" d="M0 20 L30 52 L60 20"></path>
-          <path class="a3" d="M0 40 L30 72 L60 40"></path>
-        </svg></div>
-      <div class="row justify-content-center g-0">
-        <div class="col-sm-12 col-md-8 col-lg-12 d-flex justify-content-center mx-auto">
-          <div class="card w-100">
-            <div class="card-header">
-              <h2>My Critical Task</h2>
+    -->
+  <div><svg class="arrows">
+      <path class="a1" d="M0 0 L30 32 L60 0"></path>
+      <path class="a2" d="M0 20 L30 52 L60 20"></path>
+      <path class="a3" d="M0 40 L30 72 L60 40"></path>
+    </svg></div>
+  <div class="row justify-content-center g-0">
+    <div class="col-sm-12 col-md-8 col-lg-12 d-flex justify-content-center mx-auto">
+      <div class="card w-100">
+        <div class="card-header">
+          <h2>My Critical Task</h2>
+        </div>
+        <div class="card-body">
+          <p id="daily-task" class="d-none">Today I will finish building Thryva.</p>
+          <button class="btn btn-success d-none">Complete</button>
+          <form>
+            <div class="input-group mb-3">
+              <input type="text" id="task" placeholder="Today I will..." class="form-control task-input">
             </div>
-            <div class="card-body">
-              <p id="daily-task" class="d-none">Today I will finish building Thryva.</p>
-              <button class="btn btn-success d-none">Complete</button>
-              <form>
-                <div class="input-group mb-3">
-                  <input type="text" id="task" placeholder="Today I will..." class="form-control task-input">
-                </div>
-                <button class="btn btn-outline-secondary add-button" type="button">Add
-                  Task</button>
-              </form>
-              <hr>
-              <div class="text-center">
-                <div class="progress-bar-empty"><span class="progress-bar"></span></div>
-                <div class="countdown-text">3 hours left to finish your task.</div>
-              </div>
-            </div>
+            <button class="btn btn-outline-secondary add-button" type="button">Add
+              Task</button>
+          </form>
+          <hr>
+          <div class="text-center">
+            <div class="progress-bar-empty"><span class="progress-bar"></span></div>
+            <div class="countdown-text">3 hours left to finish your task.</div>
           </div>
         </div>
       </div>
-
-      <section class="divider">
-        <div class="wave">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path
-              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              class="shape-fill"></path>
-          </svg>
-        </div>
-      </section>
-      <section class="task">
-        <div class="row">
-          <div class="col-6 text-center">
-            <h2>Critical Task</h2>
-          </div>
-        </div>
-
-        <div class="row justify-content-center add-task-form">
-          <div class="col-6 task-form m-3">
-            <form>
-              <div class="input-group mb-3">
-                <input type="text" id="task" placeholder="Today I will..." class="form-control task-input">
-              </div>
-              <button class="btn btn-outline-secondary add-button" type="button">Add
-                Task</button>
-            </form>
-          </div>
-        </div>
-
-        <div class="row justify-content-center saved-task-section">
-          <div class="col-6 m-3 text-center">
-            <h4>Today I will...</h4>
-            <p class="daily-task"></p>
-          </div>
-        </div>
-
-        <div class="row justify-content-center progress-bar-section">
-          <div class="col-6 m-3">
-            <div class="text-center">
-              <div class="progress-bar-empty"><span class="progress-bar"></span></div>
-              <div class="countdown-text">3 hours left to finish your task.</div>
-            </div>
-          </div>
-        </div>
-        
-      </section>
-      
     </div>
+  </div>
+
+  <section class="divider">
+    <div class="wave">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+  <section class="task">
+    <div class="row">
+      <div class="col-6 text-center">
+        <h2>Critical Task</h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-center add-task-form">
+      <div class="col-6 task-form m-3">
+        <form>
+          <div class="input-group mb-3">
+            <input type="text" id="task" placeholder="Today I will..." class="form-control task-input">
+          </div>
+          <button class="btn btn-outline-secondary add-button" type="button">Add
+            Task</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row justify-content-center saved-task-section">
+      <div class="col-6 m-3 text-center">
+        <h4>Today I will...</h4>
+        <p class="daily-task"></p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center progress-bar-section">
+      <div class="col-6 m-3">
+        <div class="text-center">
+          <div class="progress-bar-empty"><span class="progress-bar"></span></div>
+          <div class="countdown-text">3 hours left to finish your task.</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  </div>
   </div>
 
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="./assets/js/keys.js"></script>
   <script src="./assets/js/effects.js"></script>
-  <script src="./assets/js/quoteAPI.js"></script>
+  <script src="./quote-script.js"></script>
   <script src="./assets/js/imageAPI.js"></script>
 </body>
 
