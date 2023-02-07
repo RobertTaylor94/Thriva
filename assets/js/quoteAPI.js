@@ -36,6 +36,7 @@ $(document).ready(function () {
       if (!lastVisit || (Date.now - elapsedTime >= 86400000)) {
         // The code uses the '$.getJSON' method to make a request to the API and pass the resulting data to the 'displayQuote' function.
         $.getJSON(quoteURL, displayQuote).fail(handleError);
+        clearTask();
       } else {
         quoteContainer.text(lastQuote);
         authorContainer.text(lastAuthor);
