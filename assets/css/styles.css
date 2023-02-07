@@ -194,6 +194,22 @@ h1 {
     display: none;
 }
 
+#task-display {
+    display: none;
+}
+
+#progress-bar {
+    display: none;
+}
+
+#task-display {
+    display: none;
+}
+
+#progress-bar {
+    display: none;
+}
+
 /* @media screen and (min-width: 768px) {
     .speech-bubble {
         width: 50vw;
@@ -202,13 +218,13 @@ h1 {
     } */
 
     .card {
-        max-width: 75vw;
+        max-width: 60vw;
     }
  
 
  @media screen and (min-width: 1024px) {
     .card {
-        display: none;
+        width: 100vw !important;
     }
 
     .arrows {
@@ -243,6 +259,10 @@ h1 {
         fill: var(--main-color);
     }
 
+    #task-column {
+        background-color: var(--main-color);
+    }
+
     .task {
         display: block;
         background-color: var(--main-color);
@@ -251,10 +271,6 @@ h1 {
 
     #add-button {
         left: 50px;
-    }
-
-    .saved-task-section {
-        display: none;
     }
 
     .progress-bar-section {

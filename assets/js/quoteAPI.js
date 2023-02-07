@@ -39,6 +39,7 @@ $(document).ready(function () {
       } else {
         quoteContainer.text(lastQuote);
         authorContainer.text(lastAuthor);
+        retrieveTask()
       }
     }
   
