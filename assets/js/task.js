@@ -19,20 +19,34 @@ function addTask(event) {
     console.log(task);
     taskText.val(task);
     taskInput.val("");
-    
+
     //hide input form and show inputted task and timer
     taskForm.css("display", "none");
     taskDisplay.css("display", "block");
     addTaskBtn.css("display", "none");
-    progressBar.css("display", "block");
+    progressBar.css("display", "none");
     taskText.text(task);
+    saveTask(task);
 }
 
 function saveTask(task) {
-
+    localStorage.setItem("task", JSON.stringify(task));
 }
 
-function updateTimer() {
+function retrieveTask() {
+    task = JSON.parse(localStorage.getItem("task"));
+
+    if (!task) {
+        taskForm.css("display", "block");
+        addTaskBtn.css("display", "block");
+        taskDisplay.css("display", "none");
+    } else {
+        taskForm.css("display", "none");
+        taskDisplay.css("display", "block");
+        addTaskBtn.css("display", "none");
+        progressBar.css("display", "none");
+        taskText.text(task);
+    }
 
 }
 
