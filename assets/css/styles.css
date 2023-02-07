@@ -28,6 +28,18 @@ h1 {
     margin: 0px;
 }
 
+/* #splash-screen {
+    background-color: var(--main-color);
+} */
+
+.modal-header {
+    background-color: #ced472;
+}
+
+.modal-body {
+    background-color: var(--main-color);
+}
+
 
 /*.bubble {
     background-color: var(--speech-bubble-color);
