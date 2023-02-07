@@ -14,6 +14,26 @@
 </head>
 
 <body>
+  <!-- Modal for a splash screen when a user first loads the page -->
+  <div class="modal" tabindex="-1" id="splash-screen">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center w-100">Welcome to Thryva</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Thryva helps you organise your thoughts and select one critical task you have to complete for the day</p>
+          <br>
+          <p>Use your quote of the day to have some compassion for yourself and others and reduce some of the stress life brings. Reflect on one thing you would like to achieve today and make a note of it at the bottom of the page.</p>
+          <br>
+          <p>Check back in later to be proud of your achievement!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <header class="header">
     <h1>Thryva</h1>
   </header>
@@ -94,6 +114,9 @@
 
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./assets/js/modal.js"></script>
   <script src="./assets/js/keys.js"></script>
   <script src="./assets/js/effects.js"></script>
   <script src="./assets/js/task.js"></script>
