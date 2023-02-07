@@ -7,11 +7,6 @@ let taskDisplay = $("#task-display");
 let taskText = $("#daily-task");
 let progressBar = $("#progress-bar");
 
-let todaysDate = moment().format("DD MM YYYY")
-let timerEnd = moment().hour(20).minutes(0)
-
-console.log(timerEnd)
-
 function addTask(event) {
     event.preventDefault();
     //get user input from text field
