@@ -14,8 +14,8 @@ var days
 
 //-------------------------- varible for testing dates - turn off for real dates!!!!--------------------------------------------
 
-  dateLastVist = new Date("02/02/2023") // add for test times
-  localStorage.setItem("lastVist",dateLastVist) // add for test times 
+  //dateLastVist = new Date("02/02/2023") // add for test times
+  //localStorage.setItem("lastVist",dateLastVist) // add for test times 
 
 
 //--------------------function to call API for a new image (if last visit to page is over 24 hours)-------------
