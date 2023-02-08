@@ -206,6 +206,10 @@ h1 {
     display: none;
 }
 
+.form-control {
+    width: 100% !important
+}
+
 #task-display {
     display: none;
 }
