@@ -291,6 +291,29 @@ h1 {
 
  }
 
+/* Quote Bubble Background Opaque Box */
+
+ #speech-bubble {
+    position: relative;
+    background-color: none;
+    width: 550px;
+    /* must be a definite value less than the screen size */
+    margin: 0 auto;
+    /* centers the block by splitting the remaining space */
+    z-index: 1;
+  }
+  
+  #speech-bubble::before {
+    content: '';
+    position: absolute;
+    left: -80px;
+    top: -80px;
+    right: -80px;
+    bottom: -80px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+  }
+
  /* Quote Bubble Style */
 
   #vertically-centered-box {
